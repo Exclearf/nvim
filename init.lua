@@ -20,6 +20,13 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.opt.list = true
+vim.opt.listchars = {
+	lead = "·", -- leading spaces
+	trail = "·", -- trailing spaces
+	tab = "▸ ", -- tabs
+}
+
 require("lazy").setup({
 	require("plugins.theme"),
 	require("plugins.neo-tree"),
