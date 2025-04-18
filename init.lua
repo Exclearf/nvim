@@ -36,4 +36,5 @@ require("lazy").setup({
 	require("plugins.git-signs"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
+	require("plugins.markdown"),
 })
