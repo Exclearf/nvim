@@ -158,7 +158,29 @@ return {
 			--    https://github.com/pmizio/typescript-tools.nvim
 			--
 			-- But for many setups, the LSP (`ts_ls`) will work just fine
-			--
+			texlab = {
+				settings = {
+					texlab = {
+						build = {
+							executable = "tectonic",
+							args = {
+								"-X",
+								"compile",
+								"%f",
+								"--synctex",
+								"--keep-logs",
+								"--keep-intermediates",
+							},
+							onSave = true,
+							forwardSearchAfter = true,
+						},
+						forwardSearch = {
+							executable = "zathura",
+							args = { "--synctex-forward", "%l:1:%f", "%p" },
+						},
+					},
+				},
+			},
 			html = { filetypes = { "html" } },
 			cssls = {},
 			tailwindcss = {},
