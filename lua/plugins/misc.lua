@@ -1,5 +1,14 @@
 return {
 	{
+		"tpope/vim-sleuth",
+	},
+	{
+		"tpope/vim-rhubarb",
+	},
+	{
+		"folke/which-key.nvim",
+	},
+	{
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
 		dependencies = { "nvim-lua/plenary.nvim" },

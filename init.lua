@@ -38,6 +38,7 @@ require("lazy").setup({
 	require("plugins.typescript-tools"),
 	require("plugins.blink"),
 	require("plugins.autocomplete"),
+	require("plugins.csharp-lsp"),
 	-- Not sure if I like it or not :///
 	-- require("plugins.lsp-signature"),
 	require("plugins.git-signs"),
